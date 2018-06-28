@@ -1,1 +1,2 @@
-seção 5 aula 21
+seção 5 aula 24
+//sql load

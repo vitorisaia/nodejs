@@ -1,2 +1,1 @@
-seção 5 aula 24
-//sql load
+seção 6 aula 27

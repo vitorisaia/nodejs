@@ -5,6 +5,10 @@ var app = express()
 app.set('view engine', 'ejs')
 app.set('views', './app/views')
 
-consign().include('app/routes').into(app)
+consign().include('app/routes')
+.then('config/dbConnection.js') //se não colocar a extensão ele acha que é pasta
+.into(app)
+
+
 
 module.exports = app

@@ -1,7 +1,7 @@
 var mysql = require('mysql')
 
 var connMySQL = function() {
-    console.log('mysql connection established')
+    console.log('mysql fetch connection')
     return mysql.createConnection({
         host : 'localhost',
         user : 'root',

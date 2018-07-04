@@ -19,7 +19,7 @@ module.exports = function(application) {
 
         if (errors)
         {
-            res.render('admin/form_add_noticia')
+            res.render('admin/form_add_noticia', {validacao : errors})
             return
         }
 

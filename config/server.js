@@ -19,6 +19,7 @@ app.use(expressValidator())
 consign().include('app/routes')
 .then('config/dbConnection.js') //se não colocar a extensão ele acha que é pasta
 .then('app/models')
+.then('app/controllers')
 .into(app)
 
 

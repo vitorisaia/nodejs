@@ -7,6 +7,10 @@ var app = express()
 app.set('view engine', 'ejs')
 app.set('views', './app/views')
 
+//com o comando abaixo posso chamar os arquivos
+//que estão nessa pasta diretamente nas views
+app.use(express.static('./app/public'))
+
 //body-parser é um middleware, tem que vir antes do consign;
 //tem que botar isso pra o conteúdo dos forms virem traduzidos para JSON
 app.use(bodyParser.urlencoded({extended:true}))
@@ -21,7 +25,5 @@ consign().include('app/routes')
 .then('app/models')
 .then('app/controllers')
 .into(app)
-
-
 
 module.exports = app

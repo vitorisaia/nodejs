@@ -1,7 +1,7 @@
 var mysql = require('mysql')
 
 var connMySQL = function() {
-    console.log('mysql fetch connection')
+    console.log('gimme a bd connection!')
     return mysql.createConnection({
         host : 'localhost',
         user : 'root',
